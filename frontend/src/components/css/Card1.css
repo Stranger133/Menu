@@ -56,6 +56,8 @@ input[type="number"] {
     font-size: 20px;
     font-weight: bold;
     width: fit-content;
+    margin: 0;
+    padding: 0;
 }
 
 .number-input-group {
@@ -64,13 +66,12 @@ input[type="number"] {
     justify-content: center;
     gap: 1px;
     width: fit-content;
+    height:fit-content;
     background-color: #F2B111;
-    padding: 4px 7px;
+    padding: 4px;
   }
 
-  .number-input-group .btn {
-    width: 13px;
-    height: 23px;
+  .number-input-group .but {
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -82,14 +83,16 @@ input[type="number"] {
     border: none;
   }
 
-  .number-input-group .btn:hover {
+  .number-input-group .but:hover {
     background-color: #FFF8EC;
   }
 
   .number-input-group .input {
     text-align: center;
     width: fit-content;
+    height: fit-content;
     font-weight: bold;
+    font-size: 10px;
     padding: 0;
     background-color: #F2B111;
     border: 0px;

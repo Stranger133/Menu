@@ -15,14 +15,14 @@ export default function Card1(props) {
             <div>
                 <p className='description mb-1'>{props.description}</p>
             </div>
-            <div className='d-flex justify-content-between align-items-start gap-5'>
+            <div className='container-fluid d-flex justify-content-between align-items-center gap-5 p-0'>
                 <div>
                     <h1 className="price d-block">${props.price}</h1>
                 </div>
                 <div className="number-input-group rounded-5">
-                    <button className="btn btn-decrement" onclick="decrement()">-</button>
+                    <button className="but btn-decrement" onclick="decrement()">-</button>
                     <input type="number" className="input" id="numberInput" value="1" min="1" max="20"/>
-                    <button className="btn btn-increment" onclick="increment()">+</button>
+                    <button className="but btn-increment" onclick="increment()">+</button>
                 </div>
             </div>
         </div>
