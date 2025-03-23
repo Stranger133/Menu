@@ -1,0 +1,102 @@
+input[type="number"] {
+    -webkit-appearance: textfield; /* Safari and Chrome */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Standard */
+  }
+
+  /* Hide spinner arrows in WebKit browsers (Chrome, Safari) */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.bestCard {
+    background-color: #FFF8EC;
+    width: 235px;
+    height: 235px;
+    border-radius: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 200;
+}
+
+.add{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #F2B111;
+    width: 13px;
+    height: 23px;
+    border-radius: 50%;
+    padding: 0 12px;
+}
+
+.add:hover{
+    cursor: pointer;
+    background-color: #D9D9D9;
+}
+
+.description{
+    font-size: 11px;
+    font-weight: 200;
+    text-align: start;
+    display: -webkit-box; /* Enable flexbox-like behavior for line clamping */
+    -webkit-box-orient: vertical; /* Ensure text flows vertically */
+    -webkit-line-clamp: 2; /* Limit text to 2 lines */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis at the end of truncated text */
+    line-height: 1; /* Adjust line height for better spacing */
+}
+
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.number-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    width: fit-content;
+    background-color: #F2B111;
+    padding: 4px 7px;
+  }
+
+  .number-input-group .btn {
+    width: 13px;
+    height: 23px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #D9D9D9;
+    color: #333333;
+    border: none;
+  }
+
+  .number-input-group .btn:hover {
+    background-color: #FFF8EC;
+  }
+
+  .number-input-group .input {
+    text-align: center;
+    width: fit-content;
+    font-weight: bold;
+    padding: 0;
+    background-color: #F2B111;
+    border: 0px;
+  }
+
+
+  .number-input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #0056b3;
+  }

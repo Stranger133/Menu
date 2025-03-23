@@ -1,0 +1,10 @@
+.title{
+    width: 100%;
+    text-align: start;
+}
+
+.title h1{
+    font-size: 32px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 200;
+}

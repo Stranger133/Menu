@@ -1,5 +1,6 @@
 import React from 'react'
 import './css/Menu.css'
+import BestSelling from '../components/BestSelling'
 
 export default function Menu() {
   return (
@@ -19,6 +20,7 @@ export default function Menu() {
           <img src='./burger.png' alt='Burger'/>
         </span>
       </div>
+      <BestSelling/>
     </div>
   )
 }

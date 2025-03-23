@@ -1,6 +1,4 @@
 .nav{
-    width: 100vw;
-    height: 80px;
     background-color: #FFC729;
     display: flex;
     justify-content: space-around;
@@ -11,6 +9,8 @@
     position: fixed;
     top: 0;
     z-index: 9999;
+    width: 100vw;
+    height: 80px;
 }
 
 .logo img{
@@ -28,6 +28,7 @@
 
 .list p{
     cursor: cell;
+    margin: 0;
 }
 
 .link {

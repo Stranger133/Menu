@@ -19,7 +19,7 @@ export default function NavBar() {
             <span>
                 <Link className='link' to='About'>About</Link>
             </span>
-            <span>
+            <span className='d-flex w-auto h-auto'>
                 <p>Hi, {user}</p>
             </span>
         </div>
