@@ -20,7 +20,7 @@ public class SecurityConfig {
         return http
                 .authorizeHttpRequests(auth -> auth
                                                 .requestMatchers("/register").permitAll()
-                                                .requestMatchers("/addCart/**").permitAll()
+                                                .requestMatchers("/**").permitAll()
                                                 .anyRequest().authenticated()
                                         )
                                         .formLogin(form -> form

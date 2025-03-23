@@ -2,6 +2,7 @@ package com.backend.backend.services;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.backend.backend.DAO.ProductsDAO;
@@ -12,8 +13,13 @@ public class ClientService {
 
     ProductsDAO productDao;
 
+    @Autowired
+    public ClientService(ProductsDAO productsDAO){
+        this.productDao = productsDAO;
+    }
+
     public List<Product> getProductOfType(int type){
-        return getProductOfType(type);
+        return productDao.getProductOfType(type);
     }
     
     public List<Product> getBestSelling(){

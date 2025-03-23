@@ -8,16 +8,13 @@ import com.backend.backend.models.Cart;
 import com.backend.backend.repositories.CartRepo;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
 
 public class CartDAO implements CartRepo{
 
+    @PersistenceContext
     private EntityManager entityManager;
-
-    @Autowired
-    public CartDAO(EntityManager entityManager){
-        this.entityManager = entityManager;
-    }
 
     @Autowired
     private CartRepo cartRepository;
@@ -49,25 +46,21 @@ public class CartDAO implements CartRepo{
 
     @Override
     public void addToCart(int id) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'addToCart'");
     }
 
     @Override
     public List<Cart> findByUserId(Long userId) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findByUserId'");
     }
 
     @Override
     public Cart findByUserIdAndItemId(Long userId, Long itemId) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findByUserIdAndItemId'");
     }
 
     @Override
     public void deleteByUserIdAndItemId(Long userId, Long itemId) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'deleteByUserIdAndItemId'");
     }
     

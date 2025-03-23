@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.backend.backend.models.Product;
@@ -20,8 +20,8 @@ public class ClientController {
         this.clientService = clientService;
     }
 
-    @GetMapping("/products/type")
-    public List<Product> getProductsByType(@RequestParam int type) {
+    @GetMapping("/products/{type}")
+    public List<Product> getProductsByType(@PathVariable int type) {
         return clientService.getProductOfType(type);
     }
 
