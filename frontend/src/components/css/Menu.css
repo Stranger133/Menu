@@ -1,0 +1,46 @@
+.menu{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 80px;
+    overflow-x: hidden;
+}
+
+.banner {
+    height: 45%;
+    background-color: #FFC05A;
+    border-radius: 0 0 0 122px;
+    overflow-x: hidden;
+}
+
+.banner .text {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 45%;
+    text-align: left;
+    text-wrap: wrap;
+    color: #333333;
+}
+
+.text h1{
+    font-size: 36px;
+    font-family: 'Porter Sans Block', sans-serif;
+    font-weight: 200;
+}
+
+.text h2{
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 200;
+}
+
+.banner .burger {
+    position: absolute;
+    top: 30px;
+    left: 50vw;
+    transform: rotate(-4.12deg);
+}
+.burger img{
+    height: 506px;
+    width: auto;
+}
