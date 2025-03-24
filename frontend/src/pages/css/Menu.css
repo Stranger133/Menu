@@ -8,15 +8,15 @@
 }
 
 .banner {
-    height: 45%;
+    height: 400px;
     background-color: #FFC05A;
     border-radius: 0 0 0 122px;
     overflow-x: hidden;
 }
 
-.banner .text {
+.text {
     position: absolute;
-    top: 150px;
+    top: 180px;
     left: 20px;
     width: 45%; 
     text-align: left;
@@ -36,7 +36,7 @@
     font-weight: 200;
 }
 
-.banner .burger {
+.burger {
     position: absolute;
     top: 30px;
     left: 50vw;

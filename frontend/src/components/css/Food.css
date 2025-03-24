@@ -1,0 +1,24 @@
+.foodcontainer{
+    background-color: #CC9A00;
+    border-radius: 40px 0 40px 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.typebtn{
+    font-size: 16px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 200;
+    background-color: #D9D9D9;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 0px;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: #333333;
+}
+
+.clicked{
+    background-color: #F2B111;
+}

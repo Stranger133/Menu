@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './css/Card1.css'
 import CardBody from './CardBody'
+import './css/Card1.css'
 
-export default function Card1(props) {
+export default function Card2(props) {
   const [src, setSrc] = useState('./logo.png')
 
   useEffect(()=>{
@@ -16,10 +16,10 @@ export default function Card1(props) {
       .catch(error => console.error("Error Fetching Products: " + error.message))
   }, [props.title])
   return (
-    <div className='bestCard' key={props.id}>
-        <span>
-            <img width="235px" height="125px" src={src} alt={props.title}/>
-        </span>
+    <div className='d-flex card2'  key={props.id}>
+        <div className="image">
+            <img height='90' width='90' src={src} alt={props.title}/>
+        </div>
         <CardBody {...props}/>
     </div>
   )
